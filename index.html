@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmasters small projects</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+    <h1>Text and image CAPTCHAs are boring. Here are more interesting options.</h1>
+<div class="captcha-wrapper meme">
+  <div class="instruction">Answer the question correctly to prove that you are human.</div>
+  <div class="well">
+    <p class="question">What is love?</p>
+    <input type="radio" id="option-1" name="meme"/>
+    <label for="option-1">A complex set of emotions associated with strong feelings of affection</label>
+    <input type="radio" id="option-2" name="meme"/>
+    <label for="option-2">Baby don't hurt me.</label>
+    <div class="feedback positive"> 
+      <P>Baby, you won't hurt no more.</P><a class="button" href="https://www.youtube.com/watch?v=Yfd2cQNQDOc" target="_blank">You may proceed</a>
+    </div>
+    <div class="feedback negative">Nope, learn some memes and try again.</div>
+  </div>
+  <div class="name">Meme Knowledge</div>
+</div>
+<div class="captcha-wrapper bear">
+  <div class="instruction">Answer the question correctly to prove that you are human.</div>
+  <div class="well">
+    <p class="question">What do you do if you encounter a bear?</p>
+    <input type="radio" id="option-11" name="bear"/>
+    <label for="option-11">Run away</label>
+    <input type="radio" id="option-12" name="bear"/>
+    <label for="option-12">Share honey with it</label>
+    <input type="radio" id="option-13" name="bear"/>
+    <label for="option-13">Bear mace!</label>
+    <div class="feedback positive"> 
+      <P>You live to see another day, human.</P><a class="button" href="https://youtu.be/PWYV7bYUXcA?t=50" target="_blank">Go ahead</a>
+    </div>
+    <div class="feedback negative-1">No, you are not human. <br/>You're a deer. Try again.</div>
+    <div class="feedback negative-2">
+       No, you are not human. <br/>You're Winnie the Pooh. Try again.</div>
+  </div>
+  <div class="name">Survival Instincts</div>
+</div>
+<div class="captcha-wrapper tic-tac-toe">
+  <div class="instruction">Place X to win the game of Tic Tac Toe.</div>
+  <div class="board">
+    <div class="circle"></div>
+    <div class="cross"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="cross"></div>
+    <div class="free free-1"></div>
+    <div class="cross"></div>
+    <div class="free free-2"></div>
+    <div class="free free-3"></div>
+    <div class="winning-line"></div>
+  </div>
+  <div class="feedback positive"> 
+    <p>You won, yay.</p>
+    <button>Next!</button>
+  </div>
+  <div class="feedback negative"> 
+    <p>Three in a row to win the game.</p>
+    <button class="js-try-again">Try again</button>
+  </div>
+  <div class="name">Tic Tac Toe</div>
+</div>
+<div class="captcha-wrapper which-emoji">
+  <div class="instruction"> 
+    <p>Choose 2 emojis that resemble the items in the image.</p>
+  </div>
+  <div class="which-emoji__main">
+    <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/poodleorfood.png" alt="Fried Chicken or Poodle meme"/></div>
+    <div class="emoji-choices">
+      <div class="emoji">🐶</div>
+      <div class="emoji">🦄</div>
+      <div class="emoji">🍗</div>
+      <div class="emoji">🌿</div>
+      <div class="emoji">🚚</div>
+    </div>
+    <button class="js-submit-emoji">Go</button>
+  </div>
+  <div class="feedback positive"> 
+    <button> ZOOP 👉😃👉</button>
+  </div>
+  <div class="feedback negative"> 
+    <p>👎😐👎</p>
+    <button class="js-try-again">Let's try again</button>
+  </div>
+  <div class="name">What's the difference?</div>
+</div>
+<div class="captcha-wrapper solo-cups">
+  <div class="instruction"> 
+    <p>The cups will switch around when you hit 'Start'.<br/>Select the cup that has the ball in it.</p>
+  </div>
+  <button class="js-verify-cups">Start</button>
+  <div class="solo-cups__group">
+    <div class="cup-wrapper cup-1">
+      <div class="cup">
+        <div class="lid"></div>
+      </div>
+    </div>
+    <div class="cup-wrapper cup-2">
+      <div class="ball"></div>
+      <div class="cup">
+        <div class="lid"></div>
+      </div>
+    </div>
+    <div class="cup-wrapper cup-3">
+      <div class="cup">
+        <div class="lid"></div>
+      </div>
+    </div>
+  </div>
+  <div class="feedback positive"> 
+    <p>Very well.</p>
+    <button>You may pass</button>
+  </div>
+  <div class="feedback negative"> 
+    <p>No, it isn't there!</p>
+    <button class="js-try-again">Try again</button>
+  </div>
+  <div class="name">Now You See It, Now You Don't</div>
+</div>
+<div class="captcha-wrapper window-cleaning">
+  <div class="instruction">Clean the window in 4 seconds. Hover over dirty spots to clean it.</div>
+  <div class="windows">
+    <div class="windows__wrapper">
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window"></div>
+      <div class="window clean"></div>
+    </div>
+    <div class="windows__sill"></div>
+  </div>
+  <div class="feedback negative"> 
+    <p>You're taking a while. The windows still need cleaning.</p>
+    <button class="js-try-again">Try again</button>
+  </div>
+  <div class="feedback positive"> 
+    <p>All clean. Your mum will be so proud.</p><a class="button" href="https://cleaning.lovetoknow.com/Household_Chore_List" target="_blank">Give me more chores</a>
+  </div>
+  <div class="name">Basic Chores</div>
+</div>
+<div class="footer">
+  <div class="explanation">See the   <a href="https://codepen.io/oliviale/full/xxboXzo" target="_blank">Toggles version here</a> or the <a href="https://codepen.io/oliviale/full/vPvvyr" target="_blank">Buttons version here</a>.
+    <footer><a href="https://twitter.com/meowlivia_" target="_blank"><i class="icon-social-twitter icons"></i></a><a href="https://github.com/oliviale" target="_blank"><i class="icon-social-github icons"></i></a><a href="https://dribbble.com/oliviale" target="_blank"><i class="icon-social-dribbble icons"></i></a></footer>
+  </div>
+</div>
+<script src="script.js"></script>    
+</body>
+</html>
